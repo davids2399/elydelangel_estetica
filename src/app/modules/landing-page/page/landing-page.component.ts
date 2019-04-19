@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
-//Services
+ //Services
 import { SpecialsService } from '@services/specials/specials.service';
 
-//Models
+ //Models
 import { Specials } from '@models/specials/specials';
 
 @Component({
@@ -17,7 +17,7 @@ export class LandingPageComponent implements OnInit {
 
   constructor(
     private specialsService: SpecialsService
-  ) { 
+  ){ 
     this.specials = [];
   }
 

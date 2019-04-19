@@ -1,5 +1,5 @@
 import { Component, OnInit , Input} from '@angular/core';
-import { Specials } from "@models/specials/specials.ts";
+import { Specials } from '@models/specials/specials.ts';
 
 @Component({
   selector: 'app-specials',
@@ -17,9 +17,7 @@ export class SpecialsComponent implements OnInit {
 
   get special(): Specials { return this._special; }
 
-  constructor() { 
-
-  }
+  constructor(){}
 
   ngOnInit() {
   }

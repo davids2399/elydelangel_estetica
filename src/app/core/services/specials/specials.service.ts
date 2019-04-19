@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-//Models
+ //Models
 import { Specials } from '@models/specials/specials';
 
 @Injectable({
@@ -13,8 +13,8 @@ export class SpecialsService {
     private httpClient: HttpClient
   ) {}
 
-  public getJSON(){
-      return this.httpClient.get<Specials[]>("./assets/json/products.json");
+  public getJSON() {
+      return this.httpClient.get<Specials[]>('./assets/json/products.json');
   }
 
 
