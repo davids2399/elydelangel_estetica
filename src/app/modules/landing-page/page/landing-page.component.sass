@@ -1,0 +1,31 @@
+$girl-bg: '/assets/girl-in-the-bg.jpg';
+    
+.parallax
+    background-image: url($girl-bg)
+    height: 100%
+    min-height: 700px
+    background-attachment: fixed
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
+    .container 
+        color: black
+        height: 700px
+
+        .row
+            height: 100%
+
+@media (max-width: 900px)
+    .parallax
+        min-height: 0px
+        height: 500px
+
+        .container 
+            color: black
+            height: 500px
+
+            .row
+                height: 100%
+    
+        
