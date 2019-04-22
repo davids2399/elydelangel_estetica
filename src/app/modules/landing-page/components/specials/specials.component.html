@@ -1,19 +1,20 @@
-<div class="container border rounded shadow mb-3 mt-3">
-  <div class="row p-2">
-      <span class="badge primary-color col-12">{{special.tag}}</span>
-  </div>
-  <div class="row mt-3 mb-3">
-    <div *ngIf="special.img" class="col-12 col-lg-6">
-        <img src="assets/{{special.img}}" alt="{{special.img}}" width="100%">
+<div class="card align-self-stretch">
+    <span class="badge primary-color col-12 text-capitalize">{{special.tag}}</span>
+    <div class="image">
+        <div *ngIf="!special.img; else notImage">
+            <img class="card-img-top" src="assets/haircut.jpg" alt="haircut.jpg">
+        </div>
+        <ng-template #notImage >
+            <img class="card-img-top" src="assets/{{special.img}}" alt="{{special.img}}">
+        </ng-template>  
     </div>
-    <div class="col-12" [class]="(special.img ? 'col-lg-6' : 'col-lg-12')">
-      <div class="card-body">
-        <h3 class="card-title">{{special.name}}</h3>
-        <p class="font-weight-bold">{{special.startDate}} {{(special.endDate ? 'al ' + special.endDate : '')}}</p>
-        <p class="card-text">{{special.description}}</p>
-        <a routerLink="/" class="btn primary-color">Mas información...</a>
-      </div>
+    <div class="card-body">
+      <h5 class="card-title">{{special.name}}</h5>
+      <p class="font-weight-bold">{{special.startDate}} {{(special.endDate ? 'al ' + special.endDate : '')}}</p>
+      <p class="card-text">{{special.description}}</p>
+      <a href="#" class="btn primary-color text-capitalize">Mas información...</a>
     </div>
-  </div>
 </div>
+
+
 

@@ -4,17 +4,25 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
+import {SharedRoutingModule} from './shared-routing.module';
+
+//MDBootstrap
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MDBBootstrapModule.forRoot(),
+    SharedRoutingModule
   ],
   exports:[
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MDBBootstrapModule
   ]
 })
 export class SharedModule { }

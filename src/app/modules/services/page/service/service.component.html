@@ -1,0 +1,19 @@
+<div class="salon d-flex align-items-center">
+  <div class="container">
+    <h1 class="italic">Servicios</h1>
+  </div>
+</div>
+
+<div>
+  <div class="container">
+    <div class="col border rounded my-3">
+      <hr>
+      <div *ngFor="let service of services" class="row">
+        <div class="col">
+          <h4 class="pl-2">{{service.name}}</h4>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

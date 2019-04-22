@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Nombre",
+        "description": "Lorem ipsum dolor sit amet consectetur asdasdasdasdasdasd adipisicing elit. sdfsdfasdfasd asdfasdfasdfasdfsadfas dfasdfasdfasd fasdfasdfasdfasdf asdfasdfasdfasdfasdf",
+        "tag": "Nuevo Producto",
+        "img": "mucota-shampoo.jpg",
+        "startDate": "18/04/2019",
+        "endDate": null   
+    },
+    {
+        "name": "Nombre 2",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "tag": "Mas vendido",
+        "img": "haircut.jpg" ,
+        "startDate": "18/04/2019",
+        "endDate": null    
+    },
+    {
+        "name": "Special!!!",
+        "description": "La mejor oferta que podrias encontrar",
+        "tag": "En Oferta",
+        "img": "cosmetico.jpg",
+        "startDate": "18/04/2019",
+        "endDate": "25/04/2019"     
+    },
+    {
+        "name": "Promocion no juzgues tan rapido",
+        "description": "La mejor oferta que aun no conoces",
+        "tag": "Promocion",
+        "img": null,
+        "startDate": "18/04/2019",
+        "endDate": "25/04/2019"   
+    }
+]

@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 
 /*Modules*/
 import { SharedModule } from './shared/shared.module';
-import { LandingPageModule } from './modules/landing-page/landing-page.module';
+import { LandingPageModule } from './modules/landing-page/landing-page.module'; 
+import { ProductsModule } from './modules/products/products.module';
+import { ServicesModule } from './modules/services/services.module';
+import { ContactModule } from '@modules/contact/contact.module'; 
 
 @NgModule({
   declarations: [
@@ -14,9 +17,12 @@ import { LandingPageModule } from './modules/landing-page/landing-page.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     SharedModule,
-    LandingPageModule
+    LandingPageModule,
+    ProductsModule,
+    ServicesModule,
+    ContactModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

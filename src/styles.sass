@@ -1,23 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
 $basicFontSize: 1.2em;
-$primaryColor: #a10cbe;
+$primaryColor: #cc66cc;
+$secondaryColor: #583767;
+$thirdColor: #625d65;
+$family1: 'Montserrat', sans-serif;
+$family2: 'Raleway', sans-serif;
+$family3: 'Source Sans Pro', sans-serif;
+$family4: 'Lato', sans-serif;
+$family5: 'Merriweather', serif;
+$family6: 'Poppins', sans-serif;
 
 *
-  font-family: 'Montserrat', sans-serif
+  font-family: $family1
   margin: 0
+
+.text-capitalize
+  text-transform: uppercase !important
+
+.salon
+    min-height: 150px
+    background-attachment: fixed
+    background-position: -0px 0px
+    background-repeat: no-repeat
+    background-size: cover
+    .italic
+        font-size: 4.5em
+        color: white
+
+.italic
+  font-family: 'Playfair Display', serif
+  font-size: 5em
+  color: white
+  text-decoration-style: bold
+  text-shadow: 1px 1px 2px black  
+
+.welcome-secondary
+    color: white
+    text-shadow: 1px 1px 2px black  
 
 .medium-size
   font-size: $basicFontSize
 
 .primary-color
-  background-color: $primaryColor
+  background-color: $primaryColor !important
   color: white
+
+.secondary-color
+  background-color: $secondaryColor !important
+  color: white
+
+.third-color
+  background-color: $thirdColor
+  color: white
+
+.secondary-text
+  color: $secondaryColor
 
 .primary-text
   color: $primaryColor
 
-.op-80
-  opacity: .8
+.op-60
+  opacity: .6
+
+hr
+  background-color: $primaryColor
 
 @media (max-width: 900px)
   .medium-size

@@ -24,7 +24,6 @@ export class LandingPageComponent implements OnInit {
   ngOnInit() {
 
     this.specialsService.getJSON().subscribe(data => {
-        console.log(data);
         this.specials = data;
     });
   }

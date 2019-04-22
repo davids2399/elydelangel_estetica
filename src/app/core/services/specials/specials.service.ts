@@ -14,8 +14,6 @@ export class SpecialsService {
   ) {}
 
   public getJSON() {
-      return this.httpClient.get<Specials[]>('./assets/json/products.json');
+      return this.httpClient.get<Specials[]>('./assets/json/specials.json');
   }
-
-
 }
